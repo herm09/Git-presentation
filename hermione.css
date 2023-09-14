@@ -15,7 +15,7 @@
 .container {
     max-width: 1200px; 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 20px;
     padding-left: 10%;
@@ -46,49 +46,138 @@
 }
 
 /*body*/
-
-.body-content{
-    background-color:blanchedalmond;
-    color: #333;
-    font-family: Arial, sans-serif;
-    margin-bottom: 200px;
-    
+.body{
+    margin-bottom: 0px;
 }
 
-.text{
-    margin-bottom: 150px;
+.main-content{
+    background-color: #e1e1e1;
+    padding: 20px;
+}
+
+
+.body-content{
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin-bottom: 50px;
+    font-family: Arial, sans-serif;
+
+}
+
+.text {
+  margin-bottom: 90px;
 }
 .presentation{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 150px;
 }
 
 .titre{
 width: 35%;
 margin-left: 42%;
-margin-top: 50px;
+margin-top: 20px;
 margin-bottom: 50px;
-font-size: 40px;
+font-size: 32px;
 font-weight: bold;
 
 }
 
 .para{
-    font-size: 18px;
+    font-size: 16px;
     padding-left: 300px;
     padding-right: 300px;
     text-align: center;
     line-height: 28px;
     font-weight: bold;
+    margin: 50px auto;
 
 }
+
 
 .img1{
-    height: 600px;
-    width: 350px;
+    height: 450px;
+    width: 240px;
     border-radius: 100px;
-    margin-left: 38%;
+    margin-left: 40%;
+    margin-bottom: 10px;
 }
 
+.img2{
+    height: 350px;
+    width: 500px;
+    border-radius: 100px;
+    margin-left: 34%;
+    margin-bottom: 40px;
+
+}
+
+.img3{
+    height: 325px;
+    width: 450px;
+    border-radius: 100px;
+    margin-left: 35%;
+    margin-bottom: 40px;
+}
+
+.img4{
+    height: 350px;
+    width: 500px;;
+    border-radius: 100px;
+    margin-left: 36%;
+    margin-bottom: 40px;
+}
+
+/*Responsive*/
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 5%;
+    }
+
+    .nav-links {
+        font-size: 20px;
+    }
+
+    .nav-links li {
+        margin-right: 40px;
+    }
+
+    .titre {
+        width: 50%;
+        margin-left: 25%;
+        font-size: 28px;
+    }
+
+    .para {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding-left: 2%;
+    }
+
+    .nav-links {
+        font-size: 18px;
+    }
+
+    .nav-links li {
+        margin-right: 30px;
+    }
+
+    .titre {
+        width: 70%;
+        margin-left: 15%;
+        font-size: 24px;
+    }
+
+    .para {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 12px;
+    }
+}
